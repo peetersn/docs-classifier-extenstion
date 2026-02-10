@@ -22,7 +22,7 @@ This extension monitors Google Docs, Sheets, and Presentations for Data Classifi
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)
 3. Click **Load unpacked**
-4. Select the `/Users/peetersn/Uber/tools/docs-classifier-extension` directory
+4. Select the `/Users/xyz/tools/docs-classifier-extension` directory
 5. The extension should appear in your extensions list
 
 ### Verify Installation
