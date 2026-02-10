@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Google Docs Banner Hider",
+  "version": "2.1.0",
+  "description": "Automatically hides Google Docs Data Classification banners after 3 seconds",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/document/*",
+        "https://docs.google.com/spreadsheets/*",
+        "https://docs.google.com/presentation/*"
+      ],
+      "js": [
+        "utils.js",
+        "observer.js",
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
